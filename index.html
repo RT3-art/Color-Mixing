@@ -1,0 +1,53 @@
+<style>
+
+  div {
+    width: 100px;
+    height: 100px;
+    background: rgb(0, 212, 255);
+    background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 90%, rgba(2, 0, 36, 1) 100%);
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .first-special-box {
+  position: fixed;
+  background: rgb(255,0,196);
+background: radial-gradient(circle, rgba(255,0,196,1) 0%, rgba(149,8,188,1) 90%, rgba(2, 0, 36, 1) 100%);
+    mix-blend-mode: overlay;
+    left: calc(50vw - 50px);
+    top: calc(50vw - 50px);
+    top: 160px;
+    z-index: 1
+  }
+      
+ .second-special-box {
+position: fixed;
+   background: rgb(255,254,0);
+background: radial-gradient(circle, rgba(255,254,0,1) 0%, rgba(188,115,8,1) 90%, rgba(74,0,0,1) 100%);
+   mix-blend-mode: overlay;
+    left: calc(50vw - 50px);
+    top: calc(50vw - 50px);
+    top: 50px;
+    z-index: 1
+  }
+  
+  .third-special-box {
+position: fixed;
+    background: rgb(0,255,23);
+background: radial-gradient(circle, rgba(0,255,23,1) 0%, rgba(8,188,136,1) 75%, rgba(0,36,74,1) 100%);
+    mix-blend-mode: overlay;
+    left: calc(50vw - 50px);
+    top: calc(50vw - 50px);
+    top: 270px;
+    z-index: 1
+  }
+</style>
+
+<div></div>
+<div></div>
+<div class="first-special-box"></div>
+<div class="third-special-box"></div>
+<div></div>
+<div class="second-special-box"></div>
