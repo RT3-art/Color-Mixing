@@ -1,10 +1,13 @@
 <style>
-
+  body {
+    background-color: black;
+  }
+  
   div {
     width: 200px;
     height: 200px;
-    background: rgb(0, 212, 255);
-    background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(9, 9, 121, 1) 90%, rgba(2, 0, 36, 1) 100%);
+    background: red;
+    mix-blend-mode: overlay;
     margin: 10px;
     text-align: center;
     color: white;
@@ -13,41 +16,47 @@
   
   .first-special-box {
   position: fixed;
-  background: rgb(255,0,196);
-background: radial-gradient(circle, rgba(255,0,196,1) 0%, rgba(149,8,188,1) 90%, rgba(2, 0, 36, 1) 100%);
+  background: lime;
     mix-blend-mode: overlay;
     left: calc(50vw - 50px);
     top: calc(50vw - 50px);
     top: 310px;
-    z-index: 1
+    z-index: -1
   }
       
  .second-special-box {
 position: fixed;
-   background: rgb(255,254,0);
-background: radial-gradient(circle, rgba(255,254,0,1) 0%, rgba(188,115,8,1) 90%, rgba(74,0,0,1) 100%);
+   background: orange;
    mix-blend-mode: overlay;
     left: calc(50vw - 50px);
     top: calc(50vw - 50px);
     top: 100px;
-    z-index: 1
+    z-index: -1
   }
   
   .third-special-box {
 position: fixed;
-    background: rgb(0,255,23);
-background: radial-gradient(circle, rgba(0,255,23,1) 0%, rgba(8,188,136,1) 75%, rgba(0,36,74,1) 100%);
+    background: purple;
     mix-blend-mode: overlay;
     left: calc(50vw - 50px);
     top: calc(50vw - 50px);
     top: 520px;
-    z-index: 1
+    z-index: -1
+  }
+  
+  .fourth-special-box {
+ background: blue; 
+    mix-blend-mode: overlay;
+  }
+    .fifth-special-box {
+      background: yellow;
+        mix-blend-mode: overlay;
   }
 </style>
 
-<div></div>
-<div></div>
-<div class="first-special-box"></div>
-<div class="third-special-box"></div>
-<div></div>
-<div class="second-special-box"></div>
+<div>RED</div>
+<div class="fifth-special-box">YELLOW</div>
+<div class="first-special-box">GREEN</div>
+<div class="third-special-box">PURPLE</div>
+<div class="fourth-special-box">BLUE</div>
+<div class="second-special-box">ORANGE</div>
