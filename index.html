@@ -6,10 +6,13 @@
   div {
     width: 200px;
     height: 200px;
-    background: red;
+    background: rgb(255,0,0);
+background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(51,0,27,1) 100%);
     mix-blend-mode: overlay;
     margin: 10px;
     text-align: center;
+    font-family: arial;
+    font-size: 20px;
     color: white;
     border-radius: 50%;
   }
@@ -26,7 +29,8 @@
       
  .second-special-box {
 position: fixed;
-   background: orange;
+   background: rgb(255,164,0);
+background: radial-gradient(circle, rgba(255,164,0,1) 0%, rgba(255,124,61,1) 100%);
    mix-blend-mode: overlay;
     left: calc(50vw - 50px);
     top: calc(50vw - 50px);
@@ -55,8 +59,8 @@ position: fixed;
 </style>
 
 <div>RED</div>
+<div class="second-special-box">ORANGE</div>
 <div class="fifth-special-box">YELLOW</div>
 <div class="first-special-box">GREEN</div>
-<div class="third-special-box">PURPLE</div>
 <div class="fourth-special-box">BLUE</div>
-<div class="second-special-box">ORANGE</div>
+<div class="third-special-box">PURPLE</div>
